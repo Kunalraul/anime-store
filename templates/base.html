@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title> {% block title %}{% endblock title %} anime store</title>
+  </head>
+  <body>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">anime store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products">all products</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/ship">shipping & delivery</a></li>
+            <li><a class="dropdown-item" href="/happy">happy customers</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/care">24X7 customer care</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="button" class="btn btn-dark">search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+{% block body %}{% endblock body %}
+  </body>
+<footer>
+
+<div class="container">
+<div class="divider">
+</div>
+</div>
+<div class="footer-widgets sidebar-footer-1 container py-3"><div class="row xl-columns-4 lg-columns-4 md-columns-3 sm-columns-2 xs-columns-1"><div class="col py-md-3 widget-wrap"><div id="nav_menu-7" class="widget widget_nav_menu"><h5 class="widget-title">Store Info</h5><div class="menu-footer-menu-1-container"><ul id="menu-footer-menu-1" class="menu"><li id="menu-item-67550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67550"><a href="https://otakustore.net/about-us/">About Us</a></li><li id="menu-item-67554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67554"><a href="https://otakustore.net/happy-customers/">Happy Customers</a></li><li id="menu-item-67551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-67551"><a href="https://otakustore.net/privacy-policy/">Privacy Policy</a></li><li id="menu-item-67549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67549"><a href="https://otakustore.net/terms-and-conditions/">Terms and Conditions</a></li></ul></div></div></div><div class="col py-md-3 widget-wrap"><div id="nav_menu-5" class="widget widget_nav_menu"><h5 class="widget-title">Purchase Info</h5><div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="menu"><li id="menu-item-5610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5610"><a href="https://otakustore.net/payment-methods/">Payment Methods</a></li><li id="menu-item-5602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5602"><a href="https://otakustore.net/shipping-delivery/">Shipping &amp; Delivery</a></li><li id="menu-item-5601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5601"><a href="https://otakustore.net/refunds-returns-policy/">Refunds &amp; Returns Policy</a></li><li id="menu-item-136389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136389"><a href="https://otakustore.net/track-your-order/">Track your order</a></li></ul></div></div></div><div class="col py-md-3 widget-wrap"><div id="nav_menu-6" class="widget widget_nav_menu"><h5 class="widget-title">Customer Service</h5><div class="menu-customer-service-container"><ul id="menu-customer-service" class="menu"><li id="menu-item-67548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67548"><a href="https://otakustore.net/contact-us/">Contact Us</a></li><li id="menu-item-67547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67547"><a href="https://otakustore.net/faq/">Frequently Asked Questions</a></li><li id="menu-item-136387" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136387"><a href="mailto:kunalraul783@gmail.com">kunalraul783@gmail.com</a></li><li id="menu-item-136386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136386"><a href="tel:+91%20855%20203%2003283">+91 8552033283</a></li></ul></div></div></div><div class="col py-md-3 widget-wrap"><div id="adswst_social_icons_widget-3" class="widget widget_adswst_social_icons_widget"><h5 class="widget-title">FOLLOW US</h5><div class="btn-o bg"> <a href="https://www.instagram.com/kunal_raul_"class="btn" id="b"><i class=lass="fa fa-instagram ft14""></i><span class="label" id="l">Instagram</span></a> <a href="https://www.facebook.com/kunal.raul.35/"class="btn" id="b"><i class=lass="fa fa-instagram ft14""></i><span class="label" id="l">facebook</span></a> <a href="https://twitter.com/Kunalraul5"class="btn" id="b"><i class=lass="fa fa-instagram ft14""></i><span class="label" id="l">twitter</span></a></div></div></div></div></div>
+
+
+
+<div class="row justify-content-around mx-0  ">
+<div class="col-xl-3 col-lg-4 mx-lg-px-15 my-lg-px-15 col-md-3.5 my-md-px-15 ">
+<div class="feature d-flex justify-content-center align-items-center">
+<div class="footer-widgets sidebar-footer-2 container py-3"><div class="row xl-columns-2"><div class="col-12 py-xl-3 col-md widget-wrap"><div id="adswth_payment_methods_widget-2" class="widget widget_adswth_payment_methods_widget"><div class="payment-methods-wrap"><h5 class="widget-title">PAYMENT METHODS:</h5><div class="icons-wrap"><noscript><img width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/mastercard.svg" /></noscript><img class=" lazyloaded" width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/mastercard.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/mastercard.svg"><noscript><img width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/visa.svg" /></noscript><img class=" lazyloaded" width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/visa.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/visa.svg"><noscript><img width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/paypal.svg" /></noscript><img class=" lazyloaded" width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/paypal.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/paypal.svg"><noscript><img width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/american_express.svg" /></noscript><img class=" lazyloaded" width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/american_express.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/american_express.svg"><noscript><img width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/maestro.svg" /></noscript><img class=" lazyloaded" width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/maestro.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/maestro.svg"><noscript><img width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/discover.svg" /></noscript><img class=" lazyloaded" width="47" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/discover.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/payment_methods/discover.svg"></div></div></div></div>
+<div class="col-12 py-xl-3 col-md widget-wrap"><div id="adswth_security_methods_widget-3" class="widget widget_adswth_security_methods_widget"><div class="security-methods-wrap"><h5 class="widget-title">BUY WITH CONFIDENCE:</h5><div class="icons-wrap"><span><noscript><img width="62" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/norton.svg" /></noscript><img class=" lazyloaded" width="62" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/norton.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/norton.svg"></span><span><noscript><img width="62" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/namecheap.svg" /></noscript><img class=" lazyloaded" width="62" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/namecheap.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/namecheap.svg"></span><span><noscript><img width="62" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/ssl.svg" /></noscript><img class=" lazyloaded" width="62" height="32" src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/ssl.svg" data-src="https://otakustore.net/wp-content/themes/davinciwoo/assets/images/security_methods/ssl.svg"></span></div></div></div></div></div></div>
+
+
+
+</footer>
+
+</html>

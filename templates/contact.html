@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %} home{% endblock title %}
+
+{% block body %}
+<main id="main" class="">
+  <div class="container mt-px-20 mb-px-40">
+    <div id="content" class="content-area page-wrapper" role="main">
+      <script type="application/ld+json">
+        {"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":{"@id":"https:\/\/otakustore.net\/","name":"Home"},"position":1}]}
+      </script> 
+      <div class="row page-row justify-content-center">
+        <div class="col-12">
+          <h1 class="page-title">
+            Contact Us
+          </h1>
+          <div class="page-content clearfix">
+            <div class="row">
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <p>Have any questions or need to get more information about a product?
+                <br>
+                 Either way, you’re in the right spot!
+                </p>
+                <div role="form" class="wpcf7" id="wpcf7-f67580-p147-o1" lang="en-US" dir="ltr">
+                  <div class="screen-reader-response">
+                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                    <ul></ul>
+                    </div>
+                    {% comment %} form starts here {% endcomment %}
+<form method="post" action="/contact">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
+        </div>      
+        
+        <div class="form-group">
+            <label for="desc">Tell me about what you want to contact me for...</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+          </div>
+        </div>
+      <div class="col-lg-5 col-md-5 col-sm-12">
+        <h3>
+          <strong>ORDER STATUS</strong>
+        </h3>
+        <p>
+          If you are looking to track your order, please visit our&nbsp;<a title="Track Your Order" href="https://otakustore.net/track-your-order/">Order Tracking</a>&nbsp;page.
+        </p>
+        <h3>
+          <strong>SHIPPING &amp; DELIVERY TIMES</strong>
+        </h3>
+        <p>
+        If you are concerned with how long it may take to ship to your address, please refer to our&nbsp;<a title="Shipping &amp; Delivery Info" href="https://otakustore.net/shipping-delivery/">Shipping &amp; Delivery</a>&nbsp;page for full details.
+        </p>
+        <h3>
+          <strong>RETURNS &amp; REFUNDS</strong>
+        </h3>
+        <p>
+          If you are inquiring about a return or refund for an item you ordered, please see our&nbsp;<a title="Returns, Refunds &amp; Exchanges Policy" href="https://otakustore.net/refunds-returns-policy/">Refund Policy</a>&nbsp;first.
+        </p>
+        <h3>
+          <strong>FAQ (FREQUENTLY ASKED QUESTIONS)</strong>
+        </h3>
+        <p>
+          For quick answers to common questions regarding order status, shipping times, returns, refunds, money-back guarantee and more, please refer to our&nbsp;<a title="Help Center &amp; FAQ" href="https://otakustore.net/faq/">FAQ</a>&nbsp;page.
+        </p>
+        <h3>
+          <strong>Direct contact</strong>
+        </h3>
+        <p>
+          You can contact us directly at 
+            <a href="mailto:kunalraul783@gmail.com">contact@kunalraul783@gmail.com</a>
+              <br>
+                Phone : +91 8552033283
+              <br>
+                Address : abcdefghijklmnopqrstuvwxyz
+        </p>
+      <div class="sharethis-inline-follow-buttons st-inline-follow-buttons st-#{action_pos}  st-animated" id="st-1">
+        <div class="st-left">
+          <span>Follow us:</span>
+        </div>
+        
+          <div id="widget ">
+            <div class="btn-o bg" data-scribe="component:button" style="width: 100%;"><a href="https://www.instagram.com/kunal_raul_/" class="btn" id="b"><i class="fa fa-instagram ft14"></i><span class="label" id="l">Instagram</span></a></div>
+          </div>
+
+          <div id="widget ">
+            <div class="btn-o bg" data-scribe="component:button" style="width: 100%;"><a href="https://www.facebook.com/kunal.raul.35/" class="btn" id="b"><i class="fa fa-facebook ft14"></i><span class="label" id="l">facebook</span></a></div>
+          </div>
+
+          <div id="widget ">
+            <div class="btn-o bg" data-scribe="component:button" style="width: 100%;"><a href="https://twitter.com/Kunalraul5" class="btn" id="b"><i class="fa fa-twitter ft14"></i><span class="label" id="l">twitter</span></a></div>
+          </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+
+
+
+
+
+{% endblock body %}
